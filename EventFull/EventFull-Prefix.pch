@@ -1,0 +1,52 @@
+//
+// Prefix header for all source files of the 'EventFull' target in the 'EventFull' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+
+    /**
+     This app uses some major open source frameworks
+    */
+
+    /**
+     Nimbus Framework 
+     
+     Nimbus is a toolkit for experienced iOS software designers. It provides well-documented, modular components that solve a number of common iOS software requirements.
+     
+     Visit http://nimbuskit.info/ for more information
+    */
+    #import "Nimbus/NimbusCore.h"
+    #import "Nimbus/NimbusModels.h"
+    #import "Nimbus/NimbusNetworkImage.h"
+
+    /**
+     RestKit Framework
+     
+     RestKit is an Objective-C framework for iOS that aims to make interacting with RESTful web services simple, fast and fun.
+     
+     Visit http://restkit.org/ for more information
+    */
+    #import "RestKit/RestKit.h"
+
+    /**
+     ReactiveCocoa
+     
+     ReactiveCocoa (RAC) is an Objective-C framework for Functional Reactive Programming. It provides APIs for composing and transforming streams of values.
+     
+     Visit https://github.com/ReactiveCocoa/ReactiveCocoa for more information
+    */
+    #import "ReactiveCocoa/ReactiveCocoa.h"
+    #import "ReactiveCocoa/RACEXTScope.h"
+
+    //importing the classes   
+    #import "EFEntityObjectMappings.h"
+
+#endif

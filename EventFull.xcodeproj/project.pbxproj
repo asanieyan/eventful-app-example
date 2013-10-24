@@ -1,0 +1,742 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		21E1FADD12E74C2DADF953CE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C5D1E9B9A5BF49EE86884230 /* libPods.a */; };
+		4710E58F1814523A00AB71FE /* EFSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4710E58E1814523A00AB71FE /* EFSearchViewController.m */; };
+		4710E59618145F4900AB71FE /* EFDatePickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4710E59518145F4900AB71FE /* EFDatePickerCell.m */; };
+		4710E59A1815A56200AB71FE /* EFForm.m in Sources */ = {isa = PBXBuildFile; fileRef = 4710E5991815A56200AB71FE /* EFForm.m */; };
+		4710E59D1815B48600AB71FE /* NIFormElement+EFFormElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 4710E59C1815B48600AB71FE /* NIFormElement+EFFormElement.m */; };
+		47284D91181306D70093CCAF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47284D90181306D70093CCAF /* UIKit.framework */; };
+		47284D93181306D70093CCAF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47284D92181306D70093CCAF /* Foundation.framework */; };
+		47284D95181306D70093CCAF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47284D94181306D70093CCAF /* CoreGraphics.framework */; };
+		47284D9B181306D80093CCAF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 47284D99181306D80093CCAF /* InfoPlist.strings */; };
+		47284D9D181306D80093CCAF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 47284D9C181306D80093CCAF /* main.m */; };
+		47284DA1181306D80093CCAF /* EFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 47284DA0181306D80093CCAF /* EFAppDelegate.m */; };
+		47284DA3181306D80093CCAF /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 47284DA2181306D80093CCAF /* Default.png */; };
+		47284DA5181306D80093CCAF /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47284DA4181306D80093CCAF /* Default@2x.png */; };
+		47284DA7181306D80093CCAF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47284DA6181306D80093CCAF /* Default-568h@2x.png */; };
+		47284DAF181306D90093CCAF /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47284DAE181306D90093CCAF /* SenTestingKit.framework */; };
+		47284DB0181306D90093CCAF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47284D90181306D70093CCAF /* UIKit.framework */; };
+		47284DB1181306D90093CCAF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47284D92181306D70093CCAF /* Foundation.framework */; };
+		47284DB9181306D90093CCAF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 47284DB7181306D90093CCAF /* InfoPlist.strings */; };
+		47284DC8181315000093CCAF /* EFEventEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 47284DC7181315000093CCAF /* EFEventEntity.m */; };
+		47284DD5181342700093CCAF /* EFVenueEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 47284DD4181342700093CCAF /* EFVenueEntity.m */; };
+		47284DD8181342FC0093CCAF /* EFEventImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 47284DD7181342FC0093CCAF /* EFEventImage.m */; };
+		47284DE21813501B0093CCAF /* events.json in Resources */ = {isa = PBXBuildFile; fileRef = 47284DE11813501B0093CCAF /* events.json */; };
+		47284DE41813759A0093CCAF /* event.json in Resources */ = {isa = PBXBuildFile; fileRef = 47284DE31813759A0093CCAF /* event.json */; };
+		4778CA481818A1630010B706 /* EFTextInputFormElementCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4778CA471818A1630010B706 /* EFTextInputFormElementCell.m */; };
+		4778CA491818D70F0010B706 /* EFEventEntityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 47284DD1181341310093CCAF /* EFEventEntityTests.m */; };
+		4778CA4A1818D8680010B706 /* EFEntityObjectMappings.m in Sources */ = {isa = PBXBuildFile; fileRef = 47DAB9BC18162E06007BC006 /* EFEntityObjectMappings.m */; };
+		4778CA4D1818D9D70010B706 /* EFTestAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4778CA4C1818D9D70010B706 /* EFTestAppDelegate.m */; };
+		47DAB9BA1815DC83007BC006 /* EFFormValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 47DAB9B91815DC83007BC006 /* EFFormValidator.m */; };
+		47DAB9C018165EAC007BC006 /* EFEventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47DAB9BF18165EAC007BC006 /* EFEventsViewController.m */; };
+		47DAB9C31816C594007BC006 /* EFEventEntityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 47DAB9C21816C594007BC006 /* EFEventEntityCell.m */; };
+		47DAB9C51816CFE2007BC006 /* EFEventEntityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47DAB9C41816CFE2007BC006 /* EFEventEntityCell.xib */; };
+		47DAB9C71817184A007BC006 /* EFEntityObjectMappings.m in Sources */ = {isa = PBXBuildFile; fileRef = 47DAB9BC18162E06007BC006 /* EFEntityObjectMappings.m */; };
+		47DAB9F118172E23007BC006 /* EFPerformerEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 47DAB9F018172E22007BC006 /* EFPerformerEntity.m */; };
+		47DAB9F218176522007BC006 /* EFFormTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4710E59F1815B67700AB71FE /* EFFormTests.m */; };
+		47DAB9F618177369007BC006 /* badgeo.json in Resources */ = {isa = PBXBuildFile; fileRef = 47DAB9F518177369007BC006 /* badgeo.json */; };
+		47DAB9F818177399007BC006 /* goodgeo.json in Resources */ = {isa = PBXBuildFile; fileRef = 47DAB9F718177398007BC006 /* goodgeo.json */; };
+		47DAB9FC1817A371007BC006 /* EFFormInputValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 47DAB9FB1817A370007BC006 /* EFFormInputValidator.m */; };
+		47DAB9FF1817B5EA007BC006 /* EFFormMessageDisplayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 47DAB9FE1817B5E8007BC006 /* EFFormMessageDisplayer.m */; };
+		47DABA021818224B007BC006 /* EFMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 47DABA011818224B007BC006 /* EFMessageCell.m */; };
+		47DABA05181827E6007BC006 /* EFView.m in Sources */ = {isa = PBXBuildFile; fileRef = 47DABA04181827E5007BC006 /* EFView.m */; };
+		47DABA09181851A6007BC006 /* EFGeoLocatorService.m in Sources */ = {isa = PBXBuildFile; fileRef = 47DABA08181851A6007BC006 /* EFGeoLocatorService.m */; };
+		47DABA0C1818696E007BC006 /* EFSelectListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 47DABA0B1818696D007BC006 /* EFSelectListCell.m */; };
+		F2F5E7227C7D4706BF8254D3 /* libPods-EventFullTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DFDC0180A6D4B90B5446E45 /* libPods-EventFullTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		47DAB9EB181720C3007BC006 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47284D85181306D70093CCAF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 47284D8C181306D70093CCAF;
+			remoteInfo = EventFull;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3A73B3F8F7604443B20BF7F0 /* Pods-EventFullTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventFullTests.xcconfig"; path = "Pods/Pods-EventFullTests.xcconfig"; sourceTree = SOURCE_ROOT; };
+		4229328BC7844BD9B66FB056 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		4710E58D1814523A00AB71FE /* EFSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EFSearchViewController.h; path = Classes/EFSearchViewController.h; sourceTree = "<group>"; };
+		4710E58E1814523A00AB71FE /* EFSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EFSearchViewController.m; path = Classes/EFSearchViewController.m; sourceTree = "<group>"; };
+		4710E59418145F4900AB71FE /* EFDatePickerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EFDatePickerCell.h; path = Classes/EFDatePickerCell.h; sourceTree = "<group>"; };
+		4710E59518145F4900AB71FE /* EFDatePickerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EFDatePickerCell.m; path = Classes/EFDatePickerCell.m; sourceTree = "<group>"; };
+		4710E5981815A56200AB71FE /* EFForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EFForm.h; path = Classes/EFForm.h; sourceTree = "<group>"; };
+		4710E5991815A56200AB71FE /* EFForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EFForm.m; path = Classes/EFForm.m; sourceTree = "<group>"; };
+		4710E59B1815B48600AB71FE /* NIFormElement+EFFormElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NIFormElement+EFFormElement.h"; path = "Classes/NIFormElement+EFFormElement.h"; sourceTree = "<group>"; };
+		4710E59C1815B48600AB71FE /* NIFormElement+EFFormElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NIFormElement+EFFormElement.m"; path = "Classes/NIFormElement+EFFormElement.m"; sourceTree = "<group>"; };
+		4710E59E1815B67700AB71FE /* EFFormTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFFormTests.h; sourceTree = "<group>"; };
+		4710E59F1815B67700AB71FE /* EFFormTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFFormTests.m; sourceTree = "<group>"; };
+		47284D8D181306D70093CCAF /* EventFull.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventFull.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		47284D90181306D70093CCAF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		47284D92181306D70093CCAF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		47284D94181306D70093CCAF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		47284D98181306D80093CCAF /* EventFull-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EventFull-Info.plist"; sourceTree = "<group>"; };
+		47284D9A181306D80093CCAF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		47284D9C181306D80093CCAF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		47284D9E181306D80093CCAF /* EventFull-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EventFull-Prefix.pch"; sourceTree = "<group>"; };
+		47284D9F181306D80093CCAF /* EFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EFAppDelegate.h; sourceTree = "<group>"; };
+		47284DA0181306D80093CCAF /* EFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EFAppDelegate.m; sourceTree = "<group>"; };
+		47284DA2181306D80093CCAF /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		47284DA4181306D80093CCAF /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		47284DA6181306D80093CCAF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		47284DAD181306D90093CCAF /* EventFullTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventFullTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		47284DAE181306D90093CCAF /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		47284DB6181306D90093CCAF /* EventFullTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EventFullTests-Info.plist"; sourceTree = "<group>"; };
+		47284DB8181306D90093CCAF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		47284DC6181315000093CCAF /* EFEventEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EFEventEntity.h; path = Classes/EFEventEntity.h; sourceTree = "<group>"; };
+		47284DC7181315000093CCAF /* EFEventEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EFEventEntity.m; path = Classes/EFEventEntity.m; sourceTree = "<group>"; };
+		47284DD0181341310093CCAF /* EFEventEntityTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFEventEntityTests.h; sourceTree = "<group>"; };
+		47284DD1181341310093CCAF /* EFEventEntityTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFEventEntityTests.m; sourceTree = "<group>"; };
+		47284DD3181342700093CCAF /* EFVenueEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EFVenueEntity.h; path = Classes/EFVenueEntity.h; sourceTree = "<group>"; };
+		47284DD4181342700093CCAF /* EFVenueEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EFVenueEntity.m; path = Classes/EFVenueEntity.m; sourceTree = "<group>"; };
+		47284DD6181342FC0093CCAF /* EFEventImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EFEventImage.h; path = Classes/EFEventImage.h; sourceTree = "<group>"; };
+		47284DD7181342FC0093CCAF /* EFEventImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EFEventImage.m; path = Classes/EFEventImage.m; sourceTree = "<group>"; };
+		47284DE11813501B0093CCAF /* events.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = events.json; sourceTree = "<group>"; };
+		47284DE31813759A0093CCAF /* event.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = event.json; sourceTree = "<group>"; };
+		4778CA461818A1630010B706 /* EFTextInputFormElementCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EFTextInputFormElementCell.h; path = Classes/EFTextInputFormElementCell.h; sourceTree = "<group>"; };
+		4778CA471818A1630010B706 /* EFTextInputFormElementCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EFTextInputFormElementCell.m; path = Classes/EFTextInputFormElementCell.m; sourceTree = "<group>"; };
+		4778CA4B1818D9D70010B706 /* EFTestAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFTestAppDelegate.h; sourceTree = "<group>"; };
+		4778CA4C1818D9D70010B706 /* EFTestAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFTestAppDelegate.m; sourceTree = "<group>"; };
+		47DAB9B81815DC83007BC006 /* EFFormValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EFFormValidator.h; path = Classes/EFFormValidator.h; sourceTree = "<group>"; };
+		47DAB9B91815DC83007BC006 /* EFFormValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EFFormValidator.m; path = Classes/EFFormValidator.m; sourceTree = "<group>"; };
+		47DAB9BB18162E06007BC006 /* EFEntityObjectMappings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EFEntityObjectMappings.h; path = Classes/EFEntityObjectMappings.h; sourceTree = "<group>"; };
+		47DAB9BC18162E06007BC006 /* EFEntityObjectMappings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EFEntityObjectMappings.m; path = Classes/EFEntityObjectMappings.m; sourceTree = "<group>"; };
+		47DAB9BE18165EAC007BC006 /* EFEventsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EFEventsViewController.h; path = Classes/EFEventsViewController.h; sourceTree = "<group>"; };
+		47DAB9BF18165EAC007BC006 /* EFEventsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EFEventsViewController.m; path = Classes/EFEventsViewController.m; sourceTree = "<group>"; };
+		47DAB9C11816C594007BC006 /* EFEventEntityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EFEventEntityCell.h; path = Classes/EFEventEntityCell.h; sourceTree = "<group>"; };
+		47DAB9C21816C594007BC006 /* EFEventEntityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EFEventEntityCell.m; path = Classes/EFEventEntityCell.m; sourceTree = "<group>"; };
+		47DAB9C41816CFE2007BC006 /* EFEventEntityCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EFEventEntityCell.xib; sourceTree = "<group>"; };
+		47DAB9E918171DCA007BC006 /* EventFull copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "EventFull copy-Info.plist"; path = "/Users/asanieyan/Projects/EventFull/EventFull copy-Info.plist"; sourceTree = "<absolute>"; };
+		47DAB9EF18172E21007BC006 /* EFPerformerEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EFPerformerEntity.h; path = Classes/EFPerformerEntity.h; sourceTree = "<group>"; };
+		47DAB9F018172E22007BC006 /* EFPerformerEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EFPerformerEntity.m; path = Classes/EFPerformerEntity.m; sourceTree = "<group>"; };
+		47DAB9F518177369007BC006 /* badgeo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = badgeo.json; sourceTree = "<group>"; };
+		47DAB9F718177398007BC006 /* goodgeo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = goodgeo.json; sourceTree = "<group>"; };
+		47DAB9F918177DF2007BC006 /* Helper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Helper.h; sourceTree = "<group>"; };
+		47DAB9FA1817A370007BC006 /* EFFormInputValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EFFormInputValidator.h; path = Classes/EFFormInputValidator.h; sourceTree = "<group>"; };
+		47DAB9FB1817A370007BC006 /* EFFormInputValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EFFormInputValidator.m; path = Classes/EFFormInputValidator.m; sourceTree = "<group>"; };
+		47DAB9FD1817B5E7007BC006 /* EFFormMessageDisplayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EFFormMessageDisplayer.h; path = Classes/EFFormMessageDisplayer.h; sourceTree = "<group>"; };
+		47DAB9FE1817B5E8007BC006 /* EFFormMessageDisplayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EFFormMessageDisplayer.m; path = Classes/EFFormMessageDisplayer.m; sourceTree = "<group>"; };
+		47DABA001818224A007BC006 /* EFMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EFMessageCell.h; path = Classes/EFMessageCell.h; sourceTree = "<group>"; };
+		47DABA011818224B007BC006 /* EFMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EFMessageCell.m; path = Classes/EFMessageCell.m; sourceTree = "<group>"; };
+		47DABA03181827E5007BC006 /* EFView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFView.h; sourceTree = "<group>"; };
+		47DABA04181827E5007BC006 /* EFView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFView.m; sourceTree = "<group>"; };
+		47DABA07181851A6007BC006 /* EFGeoLocatorService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EFGeoLocatorService.h; path = Classes/EFGeoLocatorService.h; sourceTree = "<group>"; };
+		47DABA08181851A6007BC006 /* EFGeoLocatorService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EFGeoLocatorService.m; path = Classes/EFGeoLocatorService.m; sourceTree = "<group>"; };
+		47DABA0A1818696C007BC006 /* EFSelectListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EFSelectListCell.h; path = Classes/EFSelectListCell.h; sourceTree = "<group>"; };
+		47DABA0B1818696D007BC006 /* EFSelectListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EFSelectListCell.m; path = Classes/EFSelectListCell.m; sourceTree = "<group>"; };
+		6DFDC0180A6D4B90B5446E45 /* libPods-EventFullTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EventFullTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5D1E9B9A5BF49EE86884230 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		47284D8A181306D70093CCAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47284D91181306D70093CCAF /* UIKit.framework in Frameworks */,
+				47284D93181306D70093CCAF /* Foundation.framework in Frameworks */,
+				47284D95181306D70093CCAF /* CoreGraphics.framework in Frameworks */,
+				21E1FADD12E74C2DADF953CE /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47284DA9181306D90093CCAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47284DAF181306D90093CCAF /* SenTestingKit.framework in Frameworks */,
+				47284DB0181306D90093CCAF /* UIKit.framework in Frameworks */,
+				47284DB1181306D90093CCAF /* Foundation.framework in Frameworks */,
+				F2F5E7227C7D4706BF8254D3 /* libPods-EventFullTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4710E58C1814522100AB71FE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4710E58D1814523A00AB71FE /* EFSearchViewController.h */,
+				4710E58E1814523A00AB71FE /* EFSearchViewController.m */,
+				47DAB9BE18165EAC007BC006 /* EFEventsViewController.h */,
+				47DAB9BF18165EAC007BC006 /* EFEventsViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		4710E5921814542B00AB71FE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4710E59418145F4900AB71FE /* EFDatePickerCell.h */,
+				4710E59518145F4900AB71FE /* EFDatePickerCell.m */,
+				47DAB9C11816C594007BC006 /* EFEventEntityCell.h */,
+				47DAB9C21816C594007BC006 /* EFEventEntityCell.m */,
+				47DABA001818224A007BC006 /* EFMessageCell.h */,
+				47DABA011818224B007BC006 /* EFMessageCell.m */,
+				47DABA0A1818696C007BC006 /* EFSelectListCell.h */,
+				47DABA0B1818696D007BC006 /* EFSelectListCell.m */,
+				4778CA461818A1630010B706 /* EFTextInputFormElementCell.h */,
+				4778CA471818A1630010B706 /* EFTextInputFormElementCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		4710E59718148CAC00AB71FE /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				4710E5981815A56200AB71FE /* EFForm.h */,
+				4710E5991815A56200AB71FE /* EFForm.m */,
+				4710E59B1815B48600AB71FE /* NIFormElement+EFFormElement.h */,
+				4710E59C1815B48600AB71FE /* NIFormElement+EFFormElement.m */,
+				47DAB9B81815DC83007BC006 /* EFFormValidator.h */,
+				47DAB9B91815DC83007BC006 /* EFFormValidator.m */,
+				47DAB9FA1817A370007BC006 /* EFFormInputValidator.h */,
+				47DAB9FB1817A370007BC006 /* EFFormInputValidator.m */,
+				47DAB9FD1817B5E7007BC006 /* EFFormMessageDisplayer.h */,
+				47DAB9FE1817B5E8007BC006 /* EFFormMessageDisplayer.m */,
+			);
+			name = Form;
+			sourceTree = "<group>";
+		};
+		47284D84181306D70093CCAF = {
+			isa = PBXGroup;
+			children = (
+				47284D96181306D80093CCAF /* EventFull */,
+				47284DB4181306D90093CCAF /* EventFullTests */,
+				47284D8F181306D70093CCAF /* Frameworks */,
+				47284D8E181306D70093CCAF /* Products */,
+				4229328BC7844BD9B66FB056 /* Pods.xcconfig */,
+				3A73B3F8F7604443B20BF7F0 /* Pods-EventFullTests.xcconfig */,
+				47DAB9E918171DCA007BC006 /* EventFull copy-Info.plist */,
+			);
+			sourceTree = "<group>";
+		};
+		47284D8E181306D70093CCAF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				47284D8D181306D70093CCAF /* EventFull.app */,
+				47284DAD181306D90093CCAF /* EventFullTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		47284D8F181306D70093CCAF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				47284D90181306D70093CCAF /* UIKit.framework */,
+				47284D92181306D70093CCAF /* Foundation.framework */,
+				47284D94181306D70093CCAF /* CoreGraphics.framework */,
+				47284DAE181306D90093CCAF /* SenTestingKit.framework */,
+				C5D1E9B9A5BF49EE86884230 /* libPods.a */,
+				6DFDC0180A6D4B90B5446E45 /* libPods-EventFullTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		47284D96181306D80093CCAF /* EventFull */ = {
+			isa = PBXGroup;
+			children = (
+				47DABA0618185189007BC006 /* Services */,
+				4710E59718148CAC00AB71FE /* Form */,
+				4710E5921814542B00AB71FE /* Views */,
+				4710E58C1814522100AB71FE /* Controllers */,
+				47284DC5181314D90093CCAF /* Entities */,
+				47284D9F181306D80093CCAF /* EFAppDelegate.h */,
+				47284DA0181306D80093CCAF /* EFAppDelegate.m */,
+				47284D97181306D80093CCAF /* Supporting Files */,
+			);
+			path = EventFull;
+			sourceTree = "<group>";
+		};
+		47284D97181306D80093CCAF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				47284D98181306D80093CCAF /* EventFull-Info.plist */,
+				47284D99181306D80093CCAF /* InfoPlist.strings */,
+				47284D9C181306D80093CCAF /* main.m */,
+				47284D9E181306D80093CCAF /* EventFull-Prefix.pch */,
+				47284DA2181306D80093CCAF /* Default.png */,
+				47284DA4181306D80093CCAF /* Default@2x.png */,
+				47284DA6181306D80093CCAF /* Default-568h@2x.png */,
+				47DAB9C41816CFE2007BC006 /* EFEventEntityCell.xib */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		47284DB4181306D90093CCAF /* EventFullTests */ = {
+			isa = PBXGroup;
+			children = (
+				47284DE01813501B0093CCAF /* Fixtures */,
+				47284DB5181306D90093CCAF /* Supporting Files */,
+				47284DD0181341310093CCAF /* EFEventEntityTests.h */,
+				47284DD1181341310093CCAF /* EFEventEntityTests.m */,
+				4710E59E1815B67700AB71FE /* EFFormTests.h */,
+				4710E59F1815B67700AB71FE /* EFFormTests.m */,
+				47DAB9F918177DF2007BC006 /* Helper.h */,
+				47DABA03181827E5007BC006 /* EFView.h */,
+				47DABA04181827E5007BC006 /* EFView.m */,
+				4778CA4B1818D9D70010B706 /* EFTestAppDelegate.h */,
+				4778CA4C1818D9D70010B706 /* EFTestAppDelegate.m */,
+			);
+			path = EventFullTests;
+			sourceTree = "<group>";
+		};
+		47284DB5181306D90093CCAF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				47284DB6181306D90093CCAF /* EventFullTests-Info.plist */,
+				47284DB7181306D90093CCAF /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		47284DC5181314D90093CCAF /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				47284DC6181315000093CCAF /* EFEventEntity.h */,
+				47284DC7181315000093CCAF /* EFEventEntity.m */,
+				47284DD3181342700093CCAF /* EFVenueEntity.h */,
+				47284DD4181342700093CCAF /* EFVenueEntity.m */,
+				47284DD6181342FC0093CCAF /* EFEventImage.h */,
+				47284DD7181342FC0093CCAF /* EFEventImage.m */,
+				47DAB9BB18162E06007BC006 /* EFEntityObjectMappings.h */,
+				47DAB9BC18162E06007BC006 /* EFEntityObjectMappings.m */,
+				47DAB9EF18172E21007BC006 /* EFPerformerEntity.h */,
+				47DAB9F018172E22007BC006 /* EFPerformerEntity.m */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		47284DE01813501B0093CCAF /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				47284DE31813759A0093CCAF /* event.json */,
+				47284DE11813501B0093CCAF /* events.json */,
+				47DAB9F518177369007BC006 /* badgeo.json */,
+				47DAB9F718177398007BC006 /* goodgeo.json */,
+			);
+			path = Fixtures;
+			sourceTree = "<group>";
+		};
+		47DABA0618185189007BC006 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				47DABA07181851A6007BC006 /* EFGeoLocatorService.h */,
+				47DABA08181851A6007BC006 /* EFGeoLocatorService.m */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		47284D8C181306D70093CCAF /* EventFull */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47284DBF181306D90093CCAF /* Build configuration list for PBXNativeTarget "EventFull" */;
+			buildPhases = (
+				5E5E83B5E91540679DD1A874 /* Check Pods Manifest.lock */,
+				47284D89181306D70093CCAF /* Sources */,
+				47284D8A181306D70093CCAF /* Frameworks */,
+				47284D8B181306D70093CCAF /* Resources */,
+				86385E73E9A34B44A40967E5 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EventFull;
+			productName = EventFull;
+			productReference = 47284D8D181306D70093CCAF /* EventFull.app */;
+			productType = "com.apple.product-type.application";
+		};
+		47284DAC181306D90093CCAF /* EventFullTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47284DC2181306D90093CCAF /* Build configuration list for PBXNativeTarget "EventFullTests" */;
+			buildPhases = (
+				7E3EBD181D274342A969BD68 /* Check Pods Manifest.lock */,
+				47284DA8181306D90093CCAF /* Sources */,
+				47284DA9181306D90093CCAF /* Frameworks */,
+				47284DAA181306D90093CCAF /* Resources */,
+				47284DAB181306D90093CCAF /* ShellScript */,
+				F4144D95CF5A420A9853BF32 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				47DAB9EC181720C3007BC006 /* PBXTargetDependency */,
+			);
+			name = EventFullTests;
+			productName = EventFullTests;
+			productReference = 47284DAD181306D90093CCAF /* EventFullTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		47284D85181306D70093CCAF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = EF;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = GeekLab;
+			};
+			buildConfigurationList = 47284D88181306D70093CCAF /* Build configuration list for PBXProject "EventFull" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 47284D84181306D70093CCAF;
+			productRefGroup = 47284D8E181306D70093CCAF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				47284D8C181306D70093CCAF /* EventFull */,
+				47284DAC181306D90093CCAF /* EventFullTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		47284D8B181306D70093CCAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47284D9B181306D80093CCAF /* InfoPlist.strings in Resources */,
+				47284DA3181306D80093CCAF /* Default.png in Resources */,
+				47284DA5181306D80093CCAF /* Default@2x.png in Resources */,
+				47284DA7181306D80093CCAF /* Default-568h@2x.png in Resources */,
+				47DAB9C51816CFE2007BC006 /* EFEventEntityCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47284DAA181306D90093CCAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47284DB9181306D90093CCAF /* InfoPlist.strings in Resources */,
+				47284DE21813501B0093CCAF /* events.json in Resources */,
+				47284DE41813759A0093CCAF /* event.json in Resources */,
+				47DAB9F618177369007BC006 /* badgeo.json in Resources */,
+				47DAB9F818177399007BC006 /* goodgeo.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		47284DAB181306D90093CCAF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		5E5E83B5E91540679DD1A874 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7E3EBD181D274342A969BD68 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		86385E73E9A34B44A40967E5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4144D95CF5A420A9853BF32 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-EventFullTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		47284D89181306D70093CCAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47284D9D181306D80093CCAF /* main.m in Sources */,
+				47284DA1181306D80093CCAF /* EFAppDelegate.m in Sources */,
+				47284DC8181315000093CCAF /* EFEventEntity.m in Sources */,
+				47284DD5181342700093CCAF /* EFVenueEntity.m in Sources */,
+				47284DD8181342FC0093CCAF /* EFEventImage.m in Sources */,
+				4710E58F1814523A00AB71FE /* EFSearchViewController.m in Sources */,
+				4710E59618145F4900AB71FE /* EFDatePickerCell.m in Sources */,
+				4710E59A1815A56200AB71FE /* EFForm.m in Sources */,
+				4710E59D1815B48600AB71FE /* NIFormElement+EFFormElement.m in Sources */,
+				47DAB9BA1815DC83007BC006 /* EFFormValidator.m in Sources */,
+				47DAB9C018165EAC007BC006 /* EFEventsViewController.m in Sources */,
+				47DAB9C31816C594007BC006 /* EFEventEntityCell.m in Sources */,
+				47DAB9C71817184A007BC006 /* EFEntityObjectMappings.m in Sources */,
+				47DAB9F118172E23007BC006 /* EFPerformerEntity.m in Sources */,
+				47DAB9FC1817A371007BC006 /* EFFormInputValidator.m in Sources */,
+				47DAB9FF1817B5EA007BC006 /* EFFormMessageDisplayer.m in Sources */,
+				47DABA021818224B007BC006 /* EFMessageCell.m in Sources */,
+				47DABA09181851A6007BC006 /* EFGeoLocatorService.m in Sources */,
+				47DABA0C1818696E007BC006 /* EFSelectListCell.m in Sources */,
+				4778CA481818A1630010B706 /* EFTextInputFormElementCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47284DA8181306D90093CCAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47DAB9F218176522007BC006 /* EFFormTests.m in Sources */,
+				47DABA05181827E6007BC006 /* EFView.m in Sources */,
+				4778CA491818D70F0010B706 /* EFEventEntityTests.m in Sources */,
+				4778CA4A1818D8680010B706 /* EFEntityObjectMappings.m in Sources */,
+				4778CA4D1818D9D70010B706 /* EFTestAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		47DAB9EC181720C3007BC006 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 47284D8C181306D70093CCAF /* EventFull */;
+			targetProxy = 47DAB9EB181720C3007BC006 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		47284D99181306D80093CCAF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				47284D9A181306D80093CCAF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		47284DB7181306D90093CCAF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				47284DB8181306D90093CCAF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		47284DBD181306D90093CCAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		47284DBE181306D90093CCAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		47284DC0181306D90093CCAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4229328BC7844BD9B66FB056 /* Pods.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EventFull/EventFull-Prefix.pch";
+				INFOPLIST_FILE = "EventFull/EventFull-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		47284DC1181306D90093CCAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4229328BC7844BD9B66FB056 /* Pods.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EventFull/EventFull-Prefix.pch";
+				INFOPLIST_FILE = "EventFull/EventFull-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		47284DC3181306D90093CCAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A73B3F8F7604443B20BF7F0 /* Pods-EventFullTests.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EventFull.app/EventFull";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EventFull/EventFull-Prefix.pch";
+				INFOPLIST_FILE = "EventFullTests/EventFullTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		47284DC4181306D90093CCAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A73B3F8F7604443B20BF7F0 /* Pods-EventFullTests.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EventFull.app/EventFull";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EventFull/EventFull-Prefix.pch";
+				INFOPLIST_FILE = "EventFullTests/EventFullTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		47284D88181306D70093CCAF /* Build configuration list for PBXProject "EventFull" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47284DBD181306D90093CCAF /* Debug */,
+				47284DBE181306D90093CCAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47284DBF181306D90093CCAF /* Build configuration list for PBXNativeTarget "EventFull" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47284DC0181306D90093CCAF /* Debug */,
+				47284DC1181306D90093CCAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47284DC2181306D90093CCAF /* Build configuration list for PBXNativeTarget "EventFullTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47284DC3181306D90093CCAF /* Debug */,
+				47284DC4181306D90093CCAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 47284D85181306D70093CCAF /* Project object */;
+}
