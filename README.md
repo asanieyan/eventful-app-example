@@ -1,9 +1,9 @@
 Eventful App Example
 ====================
 
-This is an example app that I have done that uses the Eventful API to search and display a list of events.
+This is an example app that I have done that uses the Eventful service to search and display a list of events.
 
-The app is fairy simple. However, because of the lack of a robust, non-bloated form builder and validation, I have spent sometime building a well architected form builder and form validation component using the Nimbus Table Models and CocoaReactive. 
+The app is fairy simple. However, because of the lack of a robust, non-bloated form builder and validation iOS library, I have spent sometime building a well architected form builder and form validation component using the Nimbus Table Models and CocoaReactive. 
 
 ```
 //creates a form from a table view
@@ -35,7 +35,7 @@ Visit http://cocoapods.org/ for the installation
 `cd eventful-app-example`
 `pod install`
 
-Wait until everything is installed and then run the simulator
+Wait until everything is installed and then run the iPhone Simulator.
 
 Unit Tests
 ==========
