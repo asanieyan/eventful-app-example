@@ -10,4 +10,4 @@
 #define NSStringize(x) @NSStringize_helper(x)
 
 #define URLForFixuture(fixture) \
-    [NSURL URLWithString:[NSString stringWithFormat:@"http://10.0.1.5:8080/%@", fixture]]
+    [NSURL URLWithString:[NSString stringWithFormat:@"http://localhost:8080/%@", fixture]]

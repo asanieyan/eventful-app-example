@@ -44,11 +44,11 @@
 
 - (EFLocationCoordinate)geoLocateAddress:(NSString *)address
 {
-    address =  (__bridge_transfer NSString*) CFURLCreateStringByAddingPercentEscapes(NULL, (__bridge CFStringRef)(address), NULL, (CFStringRef)@"!*'\"();:@&=+$,/?%#[]% ", kCFStringEncodingUTF8);
+    NSString *addressEncoded =  (__bridge_transfer NSString*) CFURLCreateStringByAddingPercentEscapes(NULL, (__bridge CFStringRef)(address), NULL, (CFStringRef)@"!*'\"();:@&=+$,/?%#[]% ", kCFStringEncodingUTF8);
     
     NSString *strURL = [NSString stringWithFormat:@"%@?address=%@&sensor=false",
         self.serviceURL.absoluteString,
-        address
+        addressEncoded
     ];
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:strURL]];
     AFJSONRequestOperation *operation = [[AFJSONRequestOperation alloc] initWithRequest:request];
@@ -67,10 +67,12 @@
     if ( [self.delegate
         respondsToSelector:@selector(geoLocatorService:didGeoLocateAddress:geoCooridnate:)] ) {
         @weakify(self);
-        dispatch_sync(dispatch_get_main_queue(), ^{
+        dispatch_block_t block = ^{
             @strongify(self);
+            NSLog(@"calling delegate %@", self.delegate);
             [self.delegate geoLocatorService:self didGeoLocateAddress:address geoCooridnate:loc];
-        });
+        };
+        [NSThread isMainThread] ? block() : dispatch_sync(dispatch_get_main_queue(), block);
     }
     return loc;
 }

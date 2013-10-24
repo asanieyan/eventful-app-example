@@ -21,4 +21,4 @@ server = (req, res) ->
 	res.end(fixture filename)	
 		
 console.log 'listening to localhost:8080'
-http.createServer(server).listen 8080, '10.0.1.5'
+http.createServer(server).listen 8080, 'localhost'

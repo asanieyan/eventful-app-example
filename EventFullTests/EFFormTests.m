@@ -11,6 +11,7 @@
 #import "EFFormValidator.h"
 #import "Helper.h"
 #import "EFGeoLocatorService.h"
+#import "OCMock/OCMock.h"
 
 @implementation EFFormTests
 
@@ -19,6 +20,20 @@
     UITableView *tablView = [UITableView new];    
     EFForm *form = [[EFForm alloc] initWithTableView:tablView];
     STAssertThrows(tablView.dataSource = nil, @"Tableview data source is mutable");
+}
+
+- (void)testGeolocator
+{
+    EFGeoLocatorService *service      = [[EFGeoLocatorService alloc] initWithServiceURL:URLForFixuture(@"goodgeo")];
+    NSString *addr = @"some good address";
+    id mock =[OCMockObject mockForProtocol:@protocol(EFGeoLocatorServiceDelegate)];
+    [[[mock expect] ignoringNonObjectArgs]
+        geoLocatorService:service
+        didGeoLocateAddress:addr geoCooridnate:(EFLocationCoordinate){0,0}];
+    service.delegate = mock;
+    EFLocationCoordinate coordinate = [service geoLocateAddress:addr];
+    [mock verify];
+    STAssertTrue(coordinate.latitude == 49.261226, @"Incorrect latitude");
 }
 
 /**
